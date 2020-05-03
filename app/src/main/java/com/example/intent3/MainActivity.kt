@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         val intent = Intent(this, SecondActivity::class.java)
+        intent.putExtra("VALUE1",10)
+        intent.putExtra("VALUE2",20)
         startActivity(intent)
     }
 }
